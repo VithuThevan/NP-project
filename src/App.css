@@ -1,38 +1,62 @@
-.App {
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  background-color: black;
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.Leftside{
+  margin-top:150px;
+  width: 350px;
+  height: 450px;
+  float: left;
+  margin-left: 40%;
+  font-size: 50px;
+  background-color: lightskyblue;
+  text-align: center;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.formname{
+  font-size:40px;
 }
+
+
+.registerItem{
+  display: inline-block;
+}
+
+.button {
+  margin-top: 15px;
+  display: inline-block;
+  background-color: #787878;
+  border-radius: 10px;
+  border: 4px double darkgrey;
+  color: #eeeeee;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: darkslategrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.button:active {
+  background-color: slategrey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
