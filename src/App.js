@@ -10,6 +10,11 @@ import ListDoctorComponent from './components/ListDoctorComponent';
 import AddPatient from './components/patientComponents/AddPatient';
 import ListPatient from './components/patientComponents/ListPatient';
 import Ward from './components/Ward';
+import {AmplifySignOut, withAuthenticator} from '@aws-amplify/ui-react'
+import Amplify from 'aws-amplify';
+import awsconfig from './aws-exports'
+
+// Amplify.configure(awsconfig)
 
 function App() {
   return (
@@ -17,6 +22,7 @@ function App() {
       <HeaderComponent />
       <BrowserRouter>
       <Routes>
+       {/* <AmplifySignOut /> */}
         <Route path='/' element={<Hospital />} />
         <Route path='/doctor' element={<ListDoctorComponent />} />
         <Route path='/head' element={<HeaderComponent />} />
@@ -37,4 +43,5 @@ function App() {
   );
 }
 
-export default App;
+// export default withAuthenticator (App);
+export default  App;

@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const DOCTOR_BASE_REST_API_URL = 'http://npproject-env.eba-ckfmvcvr.ap-south-1.elasticbeanstalk.com/api/ead/doctors';
+const DOCTOR_BASE_REST_API_URL = 'https://npproject-env.eba-ckfmvcvr.ap-south-1.elasticbeanstalk.com/api/ead/doctors';
 
 class DoctorService{
 
